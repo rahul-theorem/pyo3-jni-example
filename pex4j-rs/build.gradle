@@ -1,0 +1,3 @@
+task buildNativeLib(type: Exec) {
+    commandLine 'cargo', 'build'
+}
