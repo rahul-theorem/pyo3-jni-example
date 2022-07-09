@@ -1,3 +1,7 @@
-task buildNativeLib(type: Exec) {
+tasks.register('buildNativeLib', Exec) {
     commandLine 'cargo', 'build'
+}
+
+tasks.register('clean', Exec) {
+    commandLine 'cargo', 'clean'
 }

@@ -1,9 +1,9 @@
 package com.theoremlp.pex4j;
 
 
-public class FFITest {
+public class FFIDemo {
     static {
-        System.loadLibrary("pex4j-rs");
+        System.loadLibrary("pex4j_rs");
     }
 
     public static native String sayHello(String who);

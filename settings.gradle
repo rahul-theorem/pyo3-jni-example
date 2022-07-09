@@ -8,5 +8,5 @@
  */
 
 rootProject.name = 'pex4j'
-include('pex4j-java')
 include('pex4j-rs')
+include('pex4j-java')
