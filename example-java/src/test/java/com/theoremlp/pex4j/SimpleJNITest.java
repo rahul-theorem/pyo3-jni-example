@@ -8,8 +8,8 @@ import org.junit.jupiter.api.Assertions;
 
 class SimpleJNITest {
     @Test void testFFI() {
-        int[] output = SimpleJNIDemo.genRange();
-        int[] expected = {0, 10, 20, 30, 40};
+        int[] output = SimpleJNIDemo.range(5);
+        int[] expected = {0, 1, 2, 3, 4};
         Assertions.assertArrayEquals(output, expected);
     }
 }

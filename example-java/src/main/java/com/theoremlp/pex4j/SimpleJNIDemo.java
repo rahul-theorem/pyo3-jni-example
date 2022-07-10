@@ -8,9 +8,9 @@ public class SimpleJNIDemo {
         System.loadLibrary("pyo3_jni");
     }
 
-    public static native int[] genRange();
+    public static native int[] range(int max);
 
     public static void main(String... args) {
-        System.out.println(Arrays.toString(genRange()));
+        System.out.println(Arrays.toString(range(10)));
     }
 }
