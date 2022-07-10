@@ -4,7 +4,7 @@ A simple example of how JNI, the Rust `jni` crate & `pyo3` can be used
 to execute Python functions from a Java runtime environment.
 
 ## Dev Environment
-* This project uses Java 11 & Python 3.9.12 (arm64 build) with `LD_LIBRARY_PATH` set
+* This project uses OpenJDK 11, Cargo 1.62.0, & Python 3.9.12 (arm64 build) with `LD_LIBRARY_PATH` set
 to `$PYTHON_HOME/lib` (this is required when linking `pyo3`).
 * IntelliJ Rust Plugin
 * This project uses both Gradle & Cargo to build Java & Rust source code, respectively.
