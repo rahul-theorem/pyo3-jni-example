@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class SimpleJNIDemo {
     static {
-        System.loadLibrary("pex4j_rs");
+        System.loadLibrary("pyo3_jni");
     }
 
     public static native int[] genRange();
