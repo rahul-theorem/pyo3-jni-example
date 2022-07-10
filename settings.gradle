@@ -7,6 +7,6 @@
  * in the user manual at https://docs.gradle.org/7.4.2/userguide/multi_project_builds.html
  */
 
-rootProject.name = 'pex4j'
-include('pex4j-rs')
-include('pex4j-java')
+rootProject.name = 'pyo3-jni-example'
+include('example-java')
+include('pyo3-jni')

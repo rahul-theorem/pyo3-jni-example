@@ -1,5 +1,5 @@
 [package]
-name = "pex4j-rs"
+name = "pyo3-jni"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,6 +7,10 @@ edition = "2021"
 
 [dependencies]
 jni = "0.19.0"
+pyo3 = { version = "0.16.5", features = ["auto-initialize"] }
+
+[build-dependencies]
+pyo3-build-config = "0.16.5"
 
 [lib]
 crate_type = ["cdylib"]

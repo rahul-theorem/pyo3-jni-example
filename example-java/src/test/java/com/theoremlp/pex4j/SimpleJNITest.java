@@ -6,9 +6,10 @@ package com.theoremlp.pex4j;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
-class FFITest {
+class SimpleJNITest {
     @Test void testFFI() {
-        String output = FFIDemo.sayHello("Rahul");
-        Assertions.assertEquals(output, "Hello, Rahul!");
+        int[] output = SimpleJNIDemo.genRange();
+        int[] expected = {0, 10, 20, 30, 40};
+        Assertions.assertArrayEquals(output, expected);
     }
 }

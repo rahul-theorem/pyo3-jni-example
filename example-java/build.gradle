@@ -23,14 +23,14 @@ tasks.named('test') {
 }
 
 test {
-    jvmArgs "-Djava.library.path=${project(':pex4j-rs').projectDir}/target/debug"
+    jvmArgs "-Djava.library.path=${project(':pyo3-jni').projectDir}/target/debug"
 }
 
 application {
-    mainClassName = 'com.theoremlp.pex4j.FFIDemo'
-    applicationDefaultJvmArgs = ["-Djava.library.path=${project(':pex4j-rs').projectDir}/target/debug"]
+    mainClassName = 'com.theoremlp.pex4j.SimpleJNIDemo'
+    applicationDefaultJvmArgs = ["-Djava.library.path=${project(':pyo3-jni').projectDir}/target/debug"]
 }
 
 tasks.named('classes') {
-    dependsOn project(":pex4j-rs").tasks.buildNativeLib
+    dependsOn project(":pyo3-jni").tasks.buildNativeLib
 }
