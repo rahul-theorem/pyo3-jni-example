@@ -27,7 +27,7 @@ test {
 }
 
 application {
-    mainClassName = 'com.theoremlp.pex4j.SimpleJNIDemo'
+    mainClassName = 'com.theoremlp.demo.SimpleJNIDemo'
     applicationDefaultJvmArgs = ["-Djava.library.path=${project(':pyo3-jni').projectDir}/target/debug"]
 }
 

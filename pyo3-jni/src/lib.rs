@@ -31,7 +31,7 @@ mod tests {
 
 #[no_mangle]
 #[allow(unused)]
-pub extern "system" fn Java_com_theoremlp_pex4j_SimpleJNIDemo_range(
+pub extern "system" fn Java_com_theoremlp_demo_SimpleJNIDemo_range(
     env: JNIEnv,
     class: JClass,
     max: jint,
